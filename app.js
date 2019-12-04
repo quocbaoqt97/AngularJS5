@@ -16,14 +16,14 @@
     $scope.upCounter1 = function(){
       $scope.counter1++;
     };
-    $scope.$watch('counter',function(newvalue,oldvalue){
-      console.log("old value:",oldvalue);
-      console.log("new value:",newvalue);
+    $scope.$watch(function(){
+      console.log("Digest !!!!!");
     });
-    $scope.$watch('counter1',function(newvalue,oldvalue){
-      console.log("old value:",oldvalue);
-      console.log("new value:",newvalue);
-    });
+    // $scope.$watch('counter1',function(newvalue,oldvalue){
+    //   console.log("old value:",oldvalue);
+    //   console.log("new value:",newvalue);
+    // });
   }
+
 
 })();
