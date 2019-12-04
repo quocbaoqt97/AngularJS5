@@ -1,11 +1,19 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html ng-app='webapp'>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <title>AngularJS project</title>
   </head>
-  <body>
-    <h1>This is week 2 angularjs project!</h1>
+  <body ng-controller='webappcontroller'>
+    <h1>This is week 2 angularjs project!Digest Cycle</h1>
+    <button ng-click="shownumberofwatcher()">
+    log # of watchers</button>
+    <div>
+      <button ng-click="upCounter()">Increment counter</button>
+      <button ng-click="upCounter1()">Increment counter 1</button>
 
+    </div>
   </body>
 </html>
